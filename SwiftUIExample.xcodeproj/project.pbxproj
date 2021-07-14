@@ -12,6 +12,7 @@
 		7AB986BB269DD874009E5224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB986BA269DD874009E5224 /* Assets.xcassets */; };
 		7AB986BE269DD874009E5224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB986BD269DD874009E5224 /* Preview Assets.xcassets */; };
 		7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B77269EDA42000B2CBF /* Localizable.strings */; };
+		7ABC3B79269EDE38000B2CBF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B78269EDE38000B2CBF /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7AB986BD269DD874009E5224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7AB986BF269DD874009E5224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ABC3B76269EDA42000B2CBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7ABC3B78269EDE38000B2CBF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		7AB986AA269DD871009E5224 = {
 			isa = PBXGroup;
 			children = (
+				7ABC3B78269EDE38000B2CBF /* .gitignore */,
 				7AB986B5269DD871009E5224 /* SwiftUIExample */,
 				7AB986B4269DD871009E5224 /* Products */,
 			);
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABC3B79269EDE38000B2CBF /* .gitignore in Resources */,
 				7AB986BE269DD874009E5224 /* Preview Assets.xcassets in Resources */,
 				7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */,
 				7AB986BB269DD874009E5224 /* Assets.xcassets in Resources */,
