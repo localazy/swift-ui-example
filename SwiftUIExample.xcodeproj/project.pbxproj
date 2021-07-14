@@ -11,6 +11,7 @@
 		7AB986B9269DD871009E5224 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB986B8269DD871009E5224 /* ContentView.swift */; };
 		7AB986BB269DD874009E5224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB986BA269DD874009E5224 /* Assets.xcassets */; };
 		7AB986BE269DD874009E5224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB986BD269DD874009E5224 /* Preview Assets.xcassets */; };
+		7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B77269EDA42000B2CBF /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7AB986BA269DD874009E5224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB986BD269DD874009E5224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7AB986BF269DD874009E5224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABC3B76269EDA42000B2CBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				7AB986B6269DD871009E5224 /* SwiftUIExampleApp.swift */,
 				7AB986B8269DD871009E5224 /* ContentView.swift */,
+				7ABC3B77269EDA42000B2CBF /* Localizable.strings */,
 				7AB986BA269DD874009E5224 /* Assets.xcassets */,
 				7AB986BF269DD874009E5224 /* Info.plist */,
 				7AB986BC269DD874009E5224 /* Preview Content */,
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB986BE269DD874009E5224 /* Preview Assets.xcassets in Resources */,
+				7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */,
 				7AB986BB269DD874009E5224 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +148,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7ABC3B77269EDA42000B2CBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ABC3B76269EDA42000B2CBF /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7AB986C0269DD874009E5224 /* Debug */ = {
