@@ -1,0 +1,15 @@
+{
+
+  "writeKey": "a8615276426441461781-6183e3cd646de10b65df67e0b15e0d72ee0526bd16f5658155517fade8d7e9a9",
+  "readKey": "a8615276426441461781-8c2d6128211e867d999718af834eb422e78f56e65e9c5a400cdd9c4ef77aaf2a",
+  
+  "upload": {
+    "type": "ios-strings",
+    "files": "en.lproj/Localizable.strings"
+  },
+  
+  "download": {
+    "files": "${iosLprojFolder}/${file}"
+  }
+  
+}

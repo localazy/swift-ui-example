@@ -13,6 +13,7 @@
 		7AB986BE269DD874009E5224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB986BD269DD874009E5224 /* Preview Assets.xcassets */; };
 		7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B77269EDA42000B2CBF /* Localizable.strings */; };
 		7ABC3B79269EDE38000B2CBF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B78269EDE38000B2CBF /* .gitignore */; };
+		7ABC3B7B269F1AE0000B2CBF /* localazy.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B7A269F1AE0000B2CBF /* localazy.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		7AB986BF269DD874009E5224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ABC3B76269EDA42000B2CBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7ABC3B78269EDE38000B2CBF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7ABC3B7A269F1AE0000B2CBF /* localazy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = localazy.json; path = SwiftUIExample/localazy.json; sourceTree = "<group>"; };
+		7ABC3B7D269F37A3000B2CBF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 		7AB986AA269DD871009E5224 = {
 			isa = PBXGroup;
 			children = (
+				7ABC3B7A269F1AE0000B2CBF /* localazy.json */,
 				7ABC3B78269EDE38000B2CBF /* .gitignore */,
 				7AB986B5269DD871009E5224 /* SwiftUIExample */,
 				7AB986B4269DD871009E5224 /* Products */,
@@ -85,6 +89,7 @@
 				7AB986AF269DD871009E5224 /* Sources */,
 				7AB986B0269DD871009E5224 /* Frameworks */,
 				7AB986B1269DD871009E5224 /* Resources */,
+				7ABC3B7C269F3436000B2CBF /* Localazy Upload */,
 			);
 			buildRules = (
 			);
@@ -116,6 +121,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 7AB986AA269DD871009E5224;
 			productRefGroup = 7AB986B4269DD871009E5224 /* Products */;
@@ -135,11 +141,33 @@
 				7ABC3B79269EDE38000B2CBF /* .gitignore in Resources */,
 				7AB986BE269DD874009E5224 /* Preview Assets.xcassets in Resources */,
 				7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */,
+				7ABC3B7B269F1AE0000B2CBF /* localazy.json in Resources */,
 				7AB986BB269DD874009E5224 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7ABC3B7C269F3436000B2CBF /* Localazy Upload */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Localazy Upload";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd SwiftUIExample && localazy upload && localazy download\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AB986AF269DD871009E5224 /* Sources */ = {
@@ -158,6 +186,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7ABC3B76269EDA42000B2CBF /* en */,
+				7ABC3B7D269F37A3000B2CBF /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -169,6 +198,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -16,6 +16,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ForEach(["en", "es"], id: \.self) { id in
+            ContentView()
+                .environment(\.locale, .init(identifier: id))
+        }
     }
 }
