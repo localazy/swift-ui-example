@@ -25,7 +25,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
                     
-        Text("Hello, Localazy!")
+            Text(localazyKey: "Hello, Localazy!")
             .padding()
         }.onReceive(contentViewModel.$didLoadLocalizedStrings) { _ in
             print("stringy aktualizovane")}
