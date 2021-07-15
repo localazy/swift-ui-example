@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LocalazyPackage",
+        "repositoryURL": "https://github.com/localazy/localazy-swift",
+        "state": {
+          "branch": null,
+          "revision": "f4320bcb8672289cd9576028b993146a142377ea",
+          "version": "0.1.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

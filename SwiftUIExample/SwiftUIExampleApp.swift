@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import Localazy_iOS
 
 @main
 struct SwiftUIExampleApp: App {
+    init() {
+        Bundle.swizzleLocalizationWithLocalazy()
+        Localazy.shared.forceReload()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

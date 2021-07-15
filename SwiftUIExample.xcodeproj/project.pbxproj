@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AAFDD7726A0883F000DB9FD /* Localazy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AAFDD7626A0883F000DB9FD /* Localazy.plist */; };
 		7AB986B7269DD871009E5224 /* SwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB986B6269DD871009E5224 /* SwiftUIExampleApp.swift */; };
 		7AB986B9269DD871009E5224 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB986B8269DD871009E5224 /* ContentView.swift */; };
 		7AB986BB269DD874009E5224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB986BA269DD874009E5224 /* Assets.xcassets */; };
@@ -14,9 +15,13 @@
 		7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B77269EDA42000B2CBF /* Localizable.strings */; };
 		7ABC3B79269EDE38000B2CBF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B78269EDE38000B2CBF /* .gitignore */; };
 		7ABC3B7B269F1AE0000B2CBF /* localazy.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC3B7A269F1AE0000B2CBF /* localazy.json */; };
+		7ABC3B80269F45C3000B2CBF /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABC3B7F269F45C3000B2CBF /* Localazy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AAFDD7626A0883F000DB9FD /* Localazy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localazy.plist; sourceTree = "<group>"; };
+		7AAFDD7826A08B41000DB9FD /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7AAFDD7926A08B77000DB9FD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7AB986B3269DD871009E5224 /* SwiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB986B6269DD871009E5224 /* SwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		7AB986B8269DD871009E5224 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABC3B80269F45C3000B2CBF /* Localazy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 		7AB986AA269DD871009E5224 = {
 			isa = PBXGroup;
 			children = (
+				7AAFDD7626A0883F000DB9FD /* Localazy.plist */,
 				7ABC3B7A269F1AE0000B2CBF /* localazy.json */,
 				7ABC3B78269EDE38000B2CBF /* .gitignore */,
 				7AB986B5269DD871009E5224 /* SwiftUIExample */,
@@ -96,6 +103,9 @@
 			dependencies = (
 			);
 			name = SwiftUIExample;
+			packageProductDependencies = (
+				7ABC3B7F269F45C3000B2CBF /* Localazy */,
+			);
 			productName = SwiftUIExample;
 			productReference = 7AB986B3269DD871009E5224 /* SwiftUIExample.app */;
 			productType = "com.apple.product-type.application";
@@ -122,8 +132,13 @@
 				en,
 				Base,
 				es,
+				cs,
+				fr,
 			);
 			mainGroup = 7AB986AA269DD871009E5224;
+			packageReferences = (
+				7ABC3B7E269F45C3000B2CBF /* XCRemoteSwiftPackageReference "localazy-swift" */,
+			);
 			productRefGroup = 7AB986B4269DD871009E5224 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABC3B79269EDE38000B2CBF /* .gitignore in Resources */,
+				7AAFDD7726A0883F000DB9FD /* Localazy.plist in Resources */,
 				7AB986BE269DD874009E5224 /* Preview Assets.xcassets in Resources */,
 				7ABC3B75269EDA42000B2CBF /* Localizable.strings in Resources */,
 				7ABC3B7B269F1AE0000B2CBF /* localazy.json in Resources */,
@@ -165,7 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd SwiftUIExample && localazy upload && localazy download\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd SwiftUIExample && localazy upload\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -187,6 +203,8 @@
 			children = (
 				7ABC3B76269EDA42000B2CBF /* en */,
 				7ABC3B7D269F37A3000B2CBF /* es */,
+				7AAFDD7826A08B41000DB9FD /* cs */,
+				7AAFDD7926A08B77000DB9FD /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -376,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7ABC3B7E269F45C3000B2CBF /* XCRemoteSwiftPackageReference "localazy-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/localazy/localazy-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7ABC3B7F269F45C3000B2CBF /* Localazy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ABC3B7E269F45C3000B2CBF /* XCRemoteSwiftPackageReference "localazy-swift" */;
+			productName = Localazy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7AB986AB269DD871009E5224 /* Project object */;
 }
